@@ -1,15 +1,14 @@
 "use strict";
 let myLibrary = [];
 
-function Book(name, author, pages, read) {
-  this.name = name;
-  this.author = author;
-  this.pages = pages;
-  this.read = read;
+class Book{
+	constructor(name, author, pages, read) {
+		this.name = name;
+		this.author = author;
+		this.pages = pages;
+		this.read = read;
+	}
 
-  //this.info = () => {
-  // return `${this.name} by ${this.author}, ${this.pages} pages, ${this.read}`
-  //}
 }
 
 function createBook(name, author, pages, read) {
